@@ -18,6 +18,22 @@ html {
     --color-white: #FFFFFF;
 }
 
+h1 {
+    color: var(--color-black);
+}
+
+h2 {
+    color: var(--color-black);
+}
+
+h3 {
+    color: var(--color-black);
+}
+
+p {
+    color: var(--color-black);
+}
+
 /*nawigacja*/
 
 .header {
@@ -26,6 +42,7 @@ html {
     box-shadow: 0 3px 6px #00000029;
     display: flex;
     position: fixed;
+    z-index: 100;
     top: 0;
     background-color: var(--color-white);
 }
@@ -33,6 +50,7 @@ html {
 .container {
     max-width: 1352px;
     margin: 0 auto;
+    /*background-color: red;*/
 }
 
 .navigation {
@@ -133,7 +151,6 @@ html {
 }
 
 .stats-column {
-    /*background-color: blue;*/
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -172,7 +189,7 @@ html {
     margin-top: 3px;
 }
 
-.stats-eye{
+.stats-eye {
     position: absolute;
     margin-left: 25px;
     margin-top: 13px;
@@ -189,4 +206,143 @@ html {
     font-family: 'Raleway', sans-serif;
     color: var(--color-grey);
     text-align: center;
+}
+
+/*benefity*/
+
+.benefits {
+    background-color: var(--color-light-grey);
+    padding: 20px;
+}
+
+.benefits-row {
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    height: 370px;
+    margin-top: 30px;
+}
+
+.benefits-img{
+    background-color: var(--color-green);
+    width: 440px;
+    height: 370px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.img-benefits{
+    width: 300px;
+    height: 205px;
+    position: absolute;
+    top: 110px;
+    left: 50px;
+}
+
+.row-first{
+    margin-top: 105px;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.row-third{
+    width: 625px;
+}
+
+.benefits-side-1 {
+    width: 420px;
+}
+
+.benefits-side-1::after {
+    content: "";
+    display: block;
+    width: 325px;
+    height: 4px;
+    margin-top: 20px;
+}
+
+.red-line::after{
+    background-color: var(--color-redish);
+}
+
+.blue-line::after{
+    background-color: var(--color-primary);
+}
+
+.green-line::after{
+    background-color: var(--color-green);
+}
+
+.benefits-side-1 h2 {
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 50px;
+}
+
+.benefits-side-1 p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: normal;
+}
+
+.benefits-side-2 {
+    position: relative;
+}
+
+.benefits-side-2 .img1 {
+    width: 387px;
+    height: 220px;
+    position: relative;
+    z-index: 1;
+    margin-right: 90px;
+    margin-top: 30px;
+}
+
+.benefits-side-2 .img2 {
+    width: 430px;
+    height: 330px;
+    position: relative;
+    z-index: 1;
+}
+
+.benefits-side-2 span {
+    display: block;
+    position: absolute;
+}
+
+.benefits-red {
+    background-color: var(--color-redish);
+    width: 180px;
+    height: 180px;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    border-radius: 40px;
+    position: absolute;
+    top: -20px;
+    left: 230px;
+}
+
+
+.benefits-blue {
+    background-color: var(--color-primary);
+    display: block;
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.benefits-green {
+    background-color: var(--color-green);
+}
+
+.third-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
