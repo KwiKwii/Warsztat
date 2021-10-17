@@ -225,7 +225,7 @@ p {
     margin-top: 30px;
 }
 
-.benefits-img{
+.benefits-img {
     background-color: var(--color-green);
     width: 440px;
     height: 370px;
@@ -233,7 +233,7 @@ p {
     position: relative;
 }
 
-.img-benefits{
+.img-benefits {
     width: 300px;
     height: 205px;
     position: absolute;
@@ -241,16 +241,17 @@ p {
     left: 50px;
 }
 
-.row-first{
+.row-first {
     margin-top: 105px;
 }
 
-.row-reverse{
+.row-reverse {
     flex-direction: row-reverse;
 }
 
-.row-third{
-    width: 625px;
+.row-third {
+    flex: 1;
+    margin-right: 60px;
 }
 
 .benefits-side-1 {
@@ -265,15 +266,15 @@ p {
     margin-top: 20px;
 }
 
-.red-line::after{
+.red-line::after {
     background-color: var(--color-redish);
 }
 
-.blue-line::after{
+.blue-line::after {
     background-color: var(--color-primary);
 }
 
-.green-line::after{
+.green-line::after {
     background-color: var(--color-green);
 }
 
@@ -341,8 +342,166 @@ p {
     background-color: var(--color-green);
 }
 
-.third-row{
+.third-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 105px;
+}
+
+/*cennik*/
+
+.pricing {
+}
+
+.pricing-title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.pricing-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing-column {
+    width: 370px;
+    height: 460px;
+    border: 1px solid black;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 35px;
+    margin-bottom: 100px;
+}
+
+.pricing-type {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.pricing-price {
+    font-size: 46px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.pricing-list {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pricing-list li {
+    padding: 10px;
+    text-align: center;
+}
+
+.pricing-list li::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    background-image: url("../assets/Ckechmark-1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pricing-list li:first-child {
+    margin-top: 70px;
+}
+
+.pricing-list li:last-child {
+    margin-bottom: 30px;
+}
+
+.pricing-begin {
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: black;
+    padding: 15px 55px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.pricing-basic {
+    border: 1px solid var(--color-redish);
+}
+
+.pricing-basic .pricing-begin {
+    background-color: var(--color-redish);
+}
+
+.pricing-basic .pricing-price {
+    color: var(--color-redish);
+}
+
+.pricing-basic .pricing-list li:nth-child(4)::before,
+.pricing-basic .pricing-list li:nth-child(5)::before {
+    content: "";
+    background-image: url("../assets/Close.svg");
+}
+
+.pricing-pro {
+    width: 405px;
+    height: 500px;
+    border: 1px solid var(--color-primary);
+    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.16);
+}
+
+.pricing-pro .pricing-begin {
+    background-color: var(--color-primary);
+}
+
+.pricing-pro .pricing-price {
+    color: var(--color-primary);
+}
+
+.pricing-pro .pricing-list li:nth-child(5)::before {
+    content: "";
+    background-image: url("../assets/Close.svg");
+}
+
+.pricing-pro .pricing-begin {
+    margin-top: -5px;
+}
+
+.pricing-pro .pricing-list li {
+    padding: 15px;
+}
+
+.pricing-premium {
+    border: 1px solid var(--color-green);
+}
+
+.pricing-premium .pricing-begin {
+    background-color: var(--color-green);
+}
+
+.pricing-premium .pricing-price {
+    color: var(--color-green);
+}
+
+.pricing-pro .pricing-price::after,
+.pricing-premium .pricing-price::after {
+    content: "Limited offer";
+    position: absolute;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: var(--color-black);
 }
