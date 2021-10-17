@@ -352,6 +352,7 @@ p {
 /*cennik*/
 
 .pricing {
+    margin-bottom: 160px;
 }
 
 .pricing-title {
@@ -379,7 +380,7 @@ p {
     align-items: center;
     gap: 20px;
     padding: 35px;
-    margin-bottom: 100px;
+    /*margin-bottom: 100px;*/
 }
 
 .pricing-type {
@@ -504,4 +505,143 @@ p {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     color: var(--color-black);
+}
+
+/*kontakt*/
+
+.contact{
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+}
+.contact-info{}
+.contact-title{
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+.contact-description{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 22px;
+}
+.contact-info-data{
+    display: flex;
+    gap: 60px;
+}
+.email{
+    font-size: 16px;
+    color: var(--color-grey);
+    margin-top: 42px;
+    margin-left: 40px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+.email::before{
+    content: "";
+    background-image: url("../assets/Mail Icon.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -6px;
+    left: -40px;
+}
+.phone{
+    font-size: 16px;
+    color: var(--color-grey);
+    margin-top: 42px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+.phone::before{
+    content: "";
+    background-image: url("../assets/Phone Icon.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -6px;
+    left: -40px;
+}
+.contact-form{
+    width: 440px;
+    height: 370px;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.label-name{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-primary);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.input-name{
+    border: none;
+    border-bottom: 1px solid var(--color-grey)
+}
+.label-email{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-primary);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.input-email{
+    border: none;
+    border-bottom: 1px solid var(--color-grey)
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-checkbox{
+    display: flex;
+}
+.input-checkbox{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+.input-checkbox-span{
+    width: 135px;
+    height: 25px;
+    border: 1px solid var(--color-grey);
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.input-checkbox:checked + .input-checkbox-span{
+    background-image: url("../assets/Checkmark.svg");
+    background-size: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.label-checkbox{
+    font-size: 12px;
+    color: var(--color-grey);
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+.btn{
+    align-self: flex-end;
+    padding: 20px 97px;
+    background-color: var(--color-primary);
+    border-radius: 35px;
+    color: white;
+    border: none;
+    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
 }
