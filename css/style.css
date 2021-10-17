@@ -50,7 +50,6 @@ p {
 .container {
     max-width: 1352px;
     margin: 0 auto;
-    /*background-color: red;*/
 }
 
 .navigation {
@@ -65,6 +64,7 @@ p {
     color: var(--color-primary);
     font-size: 37px;
     font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
 
 .menu {
@@ -93,8 +93,7 @@ p {
 /*sekcja otwierająca*/
 
 .hero {
-    margin-top: 130px;
-    height: calc(100vh - 130px);
+    height: 100vh;
     background-image: url("../assets/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -107,7 +106,7 @@ p {
     flex-direction: column;
     justify-content: flex-start;
     gap: 40px;
-    padding-top: 120px;
+    padding-top: 270px;
 }
 
 .hero-section h1 {
@@ -380,7 +379,6 @@ p {
     align-items: center;
     gap: 20px;
     padding: 35px;
-    /*margin-bottom: 100px;*/
 }
 
 .pricing-type {
@@ -509,26 +507,32 @@ p {
 
 /*kontakt*/
 
-.contact{
+.contact {
     display: flex;
     justify-content: center;
     gap: 110px;
 }
-.contact-info{}
-.contact-title{
+
+.contact-info {
+}
+
+.contact-title {
     font-size: 50px;
     font-family: 'Raleway', sans-serif;
 }
-.contact-description{
+
+.contact-description {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     margin-top: 22px;
 }
-.contact-info-data{
+
+.contact-info-data {
     display: flex;
     gap: 60px;
 }
-.email{
+
+.email {
     font-size: 16px;
     color: var(--color-grey);
     margin-top: 42px;
@@ -536,7 +540,8 @@ p {
     font-family: 'Open Sans', sans-serif;
     position: relative;
 }
-.email::before{
+
+.email::before {
     content: "";
     background-image: url("../assets/Mail Icon.svg");
     display: inline-block;
@@ -549,14 +554,16 @@ p {
     top: -6px;
     left: -40px;
 }
-.phone{
+
+.phone {
     font-size: 16px;
     color: var(--color-grey);
     margin-top: 42px;
     font-family: 'Open Sans', sans-serif;
     position: relative;
 }
-.phone::before{
+
+.phone::before {
     content: "";
     background-image: url("../assets/Phone Icon.svg");
     display: inline-block;
@@ -569,71 +576,84 @@ p {
     top: -6px;
     left: -40px;
 }
-.contact-form{
+
+.contact-form {
     width: 440px;
     height: 370px;
 }
-.contact-form form{
+
+.contact-form form {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-.label-name{
+
+.label-name {
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     color: var(--color-primary);
     font-weight: bold;
     text-transform: uppercase;
 }
-.input-name{
+
+.input-name {
     border: none;
     border-bottom: 1px solid var(--color-grey)
 }
-.label-email{
+
+.label-email {
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     color: var(--color-primary);
     font-weight: bold;
     text-transform: uppercase;
 }
-.input-email{
+
+.input-email {
     border: none;
     border-bottom: 1px solid var(--color-grey)
 }
-.contact-form form{
+
+.contact-form form {
     display: flex;
     flex-direction: column;
 }
-.contact-checkbox{
+
+.contact-checkbox {
     display: flex;
 }
-.input-checkbox{
+
+.input-checkbox {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     width: 25px;
     height: 25px;
 }
-.input-checkbox-span{
+
+.input-checkbox-span {
     width: 135px;
     height: 25px;
     border: 1px solid var(--color-grey);
     margin-right: 5px;
     border-radius: 5px;
 }
-.input-checkbox:checked + .input-checkbox-span{
+
+.input-checkbox:checked + .input-checkbox-span {
     background-image: url("../assets/Checkmark.svg");
     background-size: 12px;
     background-position: center;
     background-repeat: no-repeat;
 }
-.label-checkbox{
+
+.label-checkbox {
     font-size: 12px;
     color: var(--color-grey);
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
 }
-.btn{
+
+.btn {
     align-self: flex-end;
     padding: 20px 97px;
     background-color: var(--color-primary);
@@ -644,4 +664,55 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 13px;
+}
+
+/*stopka*/
+
+.footer {
+    box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.16);
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+}
+
+.footer-info .logo {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.copyright {
+    color: var(--color-grey);
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-socials {
+}
+
+.twitter {
+    background-image: url("../assets/Twitter.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+.facebook {
+    background-image: url("../assets/Facebook.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-left: 20px;
 }
